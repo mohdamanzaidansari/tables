@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h3>
+            Primathon Stars
+        </h3>
+    </header>
+    <main>
+        <div class="main_container">
+            <h1>
+                Employee Table
+            </h1>
+            <div class="table__controls">
+                <input class="search__input" type="text" placeholder="Search by Name..."
+                    oninput="filterhandler(event)" />
+                <div class="switch__container">
+                    <p>Minimum Amount: </p>
+                    <label class="switch">
+                        <input type="checkbox" checked onclick="toggleAmount()" />
+                        <div></div>
+                    </label>
+                </div>
+            </div>
+            <div class="table__container">
+                <table>
+                    <thead>
+                        <th>Sr </th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone No.</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </thead>
+                    <tbody id="active_table">
+                        <!-- Table row will be added dynamatically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>
+            Thanks for visiting us
+        </h4>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
