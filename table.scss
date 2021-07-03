@@ -52,10 +52,10 @@ h1 {
   .search__input {
     display: block;
     margin-bottom: 2rem;
-    padding: 0.8rem;
+    padding: 0.8rem 1.6rem;
     width: 100%;
     font-size: 1.6rem;
-    text-align: center;
+    // text-align: center;
     background-color: darken($color: white, $amount: 2%);
     border-radius: 1rem;
     outline: none;
@@ -151,6 +151,10 @@ h1 {
       margin: 0 auto;
       border-radius: 3.2rem;
       overflow: hidden;
+    }
+
+    i {
+      cursor: pointer;
     }
   }
 }
